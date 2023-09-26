@@ -36,3 +36,10 @@ function containsDuplicatesSet(nums){
     }
     return false
 }
+
+// After Mentor Review
+function devDuplicateSet(nums){
+    const numSet = new Set(nums)  // Set can take iterable that automatically makes Set of unique values
+    return numSet.size() === nums.length
+}
+// return new Set(nums).size() === nums.length
